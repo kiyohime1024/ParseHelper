@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>视频解析助手</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      width: 300px;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f7f8fc;
+      color: #222;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+    }
+    p {
+      margin: 0 0 10px;
+      font-size: 12px;
+      line-height: 1.5;
+      color: #666;
+    }
+    label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #333;
+    }
+    input {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #d0d7e2;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 12px;
+      background: #667eea;
+      color: white;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #5a67d8;
+    }
+    .status {
+      margin-top: 8px;
+      font-size: 12px;
+      color: #2e7d32;
+      min-height: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h3>视频解析助手</h3>
+    <p>点击扩展图标即可直接修改解析地址。</p>
+    <label for="parserUrl">解析服务器地址</label>
+    <input id="parserUrl" type="text" placeholder="https://your-worker.workers.dev/parse?url=">
+    <button id="saveBtn">保存</button>
+    <div id="status" class="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
