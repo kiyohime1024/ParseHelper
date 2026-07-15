@@ -10,10 +10,11 @@ async function getParserUrl() {
   return result.parserUrl || DEFAULT_PARSER_URL;
 }
 
-// -------- 创建右键菜单 --------
 async function createContextMenu() {
+  // 先移除所有已存在的菜单项，避免重复 ID 错误
   await chrome.contextMenus.removeAll();
 
+  // 创建新的菜单项
   chrome.contextMenus.create({
     id: "copy-bili-parsed-url",
     title: "复制B站解析链接",

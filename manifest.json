@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "B站视频解析助手",
   "version": "1.0.0",
-  "description": "右键复制B站视频解析链接，支持首页/搜索结果/视频页全站使用",
+  "description": "右键复制bv号然后拼接解析链接",
   "permissions": [
     "contextMenus",
     "storage",
@@ -28,5 +28,10 @@
       "run_at": "document_end"
     }
   ],
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
   "options_page": "options.html"
 }

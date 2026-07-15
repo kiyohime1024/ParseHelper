@@ -1,0 +1,5 @@
+名称: B站视频解析助手
+版本: 1.0.0
+简短说明: 右键复制bv号然后拼接解析链接
+权限: contextMenus, storage, activeTab, clipboardWrite, scripting
+默认语言: zh-CN
